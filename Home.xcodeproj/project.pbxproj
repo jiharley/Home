@@ -14,8 +14,6 @@
 		38509A12187BC4040005F551 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38509A11187BC4040005F551 /* main.m */; };
 		38509A16187BC4040005F551 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38509A15187BC4040005F551 /* AppDelegate.m */; };
 		38509A19187BC4040005F551 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38509A17187BC4040005F551 /* Main.storyboard */; };
-		38509A1C187BC4040005F551 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38509A1B187BC4040005F551 /* FirstViewController.m */; };
-		38509A1F187BC4040005F551 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38509A1E187BC4040005F551 /* SecondViewController.m */; };
 		38509A21187BC4040005F551 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38509A20187BC4040005F551 /* Images.xcassets */; };
 		38509A28187BC4040005F551 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38509A27187BC4040005F551 /* XCTest.framework */; };
 		38509A29187BC4040005F551 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38509A05187BC4040005F551 /* Foundation.framework */; };
@@ -26,9 +24,19 @@
 		38509A46187BC4930005F551 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 38509A3F187BC4930005F551 /* background.png */; };
 		38509A47187BC4930005F551 /* bus.png in Resources */ = {isa = PBXBuildFile; fileRef = 38509A40187BC4930005F551 /* bus.png */; };
 		38509A48187BC4930005F551 /* discuss.png in Resources */ = {isa = PBXBuildFile; fileRef = 38509A41187BC4930005F551 /* discuss.png */; };
-		38509A49187BC4930005F551 /* find@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38509A42187BC4930005F551 /* find@2x.png */; };
 		38509A4A187BC4930005F551 /* news.png in Resources */ = {isa = PBXBuildFile; fileRef = 38509A43187BC4930005F551 /* news.png */; };
 		38509A4B187BC4930005F551 /* takeme.png in Resources */ = {isa = PBXBuildFile; fileRef = 38509A44187BC4930005F551 /* takeme.png */; };
+		38509A4D187BEEBA0005F551 /* find@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38509A4C187BEEBA0005F551 /* find@2x.png */; };
+		38509A4F187BEFD90005F551 /* message@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38509A4E187BEFD90005F551 /* message@2x.png */; };
+		38509A51187BF0B90005F551 /* profile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38509A50187BF0B90005F551 /* profile@2x.png */; };
+		38509A53187D219C0005F551 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 38509A52187D219C0005F551 /* back.png */; };
+		650960CA18876F850076EB83 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 650960C918876F850076EB83 /* HomeViewController.m */; };
+		650960CD188770030076EB83 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 650960CC188770030076EB83 /* MessageViewController.m */; };
+		650960D1188770BA0076EB83 /* BusInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 650960D0188770BA0076EB83 /* BusInformationViewController.m */; };
+		650960DB1887ACFC0076EB83 /* TimeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 650960D91887ACFC0076EB83 /* TimeTableViewController.m */; };
+		650960DC1887ACFC0076EB83 /* TimeTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 650960DA1887ACFC0076EB83 /* TimeTableViewController.xib */; };
+		650960E01887AD1E0076EB83 /* DestinationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 650960DE1887AD1E0076EB83 /* DestinationViewController.m */; };
+		650960E11887AD1E0076EB83 /* DestinationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 650960DF1887AD1E0076EB83 /* DestinationViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +61,6 @@
 		38509A14187BC4040005F551 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		38509A15187BC4040005F551 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		38509A18187BC4040005F551 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		38509A1A187BC4040005F551 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		38509A1B187BC4040005F551 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		38509A1D187BC4040005F551 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		38509A1E187BC4040005F551 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		38509A20187BC4040005F551 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		38509A26187BC4040005F551 /* HomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38509A27187BC4040005F551 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -67,9 +71,24 @@
 		38509A3F187BC4930005F551 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		38509A40187BC4930005F551 /* bus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bus.png; sourceTree = "<group>"; };
 		38509A41187BC4930005F551 /* discuss.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = discuss.png; sourceTree = "<group>"; };
-		38509A42187BC4930005F551 /* find@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "find@2x.png"; sourceTree = "<group>"; };
 		38509A43187BC4930005F551 /* news.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = news.png; sourceTree = "<group>"; };
 		38509A44187BC4930005F551 /* takeme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = takeme.png; sourceTree = "<group>"; };
+		38509A4C187BEEBA0005F551 /* find@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "find@2x.png"; sourceTree = "<group>"; };
+		38509A4E187BEFD90005F551 /* message@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "message@2x.png"; sourceTree = "<group>"; };
+		38509A50187BF0B90005F551 /* profile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile@2x.png"; sourceTree = "<group>"; };
+		38509A52187D219C0005F551 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		650960C818876F850076EB83 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		650960C918876F850076EB83 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		650960CB188770030076EB83 /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
+		650960CC188770030076EB83 /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
+		650960CF188770BA0076EB83 /* BusInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusInformationViewController.h; sourceTree = "<group>"; };
+		650960D0188770BA0076EB83 /* BusInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusInformationViewController.m; sourceTree = "<group>"; };
+		650960D81887ACFC0076EB83 /* TimeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTableViewController.h; sourceTree = "<group>"; };
+		650960D91887ACFC0076EB83 /* TimeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeTableViewController.m; sourceTree = "<group>"; };
+		650960DA1887ACFC0076EB83 /* TimeTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeTableViewController.xib; sourceTree = "<group>"; };
+		650960DD1887AD1E0076EB83 /* DestinationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DestinationViewController.h; sourceTree = "<group>"; };
+		650960DE1887AD1E0076EB83 /* DestinationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DestinationViewController.m; sourceTree = "<group>"; };
+		650960DF1887AD1E0076EB83 /* DestinationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DestinationViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,15 +149,16 @@
 		38509A0B187BC4040005F551 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				650960CE188770710076EB83 /* BusInformation */,
 				38509A14187BC4040005F551 /* AppDelegate.h */,
 				38509A15187BC4040005F551 /* AppDelegate.m */,
 				38509A17187BC4040005F551 /* Main.storyboard */,
-				38509A1A187BC4040005F551 /* FirstViewController.h */,
-				38509A1B187BC4040005F551 /* FirstViewController.m */,
-				38509A1D187BC4040005F551 /* SecondViewController.h */,
-				38509A1E187BC4040005F551 /* SecondViewController.m */,
 				38509A20187BC4040005F551 /* Images.xcassets */,
 				38509A0C187BC4040005F551 /* Supporting Files */,
+				650960C818876F850076EB83 /* HomeViewController.h */,
+				650960C918876F850076EB83 /* HomeViewController.m */,
+				650960CB188770030076EB83 /* MessageViewController.h */,
+				650960CC188770030076EB83 /* MessageViewController.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -175,15 +195,33 @@
 		38509A3D187BC44E0005F551 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				38509A52187D219C0005F551 /* back.png */,
+				38509A4E187BEFD90005F551 /* message@2x.png */,
+				38509A50187BF0B90005F551 /* profile@2x.png */,
+				38509A4C187BEEBA0005F551 /* find@2x.png */,
 				38509A3E187BC4930005F551 /* 4ip5.png */,
 				38509A3F187BC4930005F551 /* background.png */,
 				38509A40187BC4930005F551 /* bus.png */,
 				38509A41187BC4930005F551 /* discuss.png */,
-				38509A42187BC4930005F551 /* find@2x.png */,
 				38509A43187BC4930005F551 /* news.png */,
 				38509A44187BC4930005F551 /* takeme.png */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		650960CE188770710076EB83 /* BusInformation */ = {
+			isa = PBXGroup;
+			children = (
+				650960CF188770BA0076EB83 /* BusInformationViewController.h */,
+				650960D0188770BA0076EB83 /* BusInformationViewController.m */,
+				650960D81887ACFC0076EB83 /* TimeTableViewController.h */,
+				650960D91887ACFC0076EB83 /* TimeTableViewController.m */,
+				650960DA1887ACFC0076EB83 /* TimeTableViewController.xib */,
+				650960DD1887AD1E0076EB83 /* DestinationViewController.h */,
+				650960DE1887AD1E0076EB83 /* DestinationViewController.m */,
+				650960DF1887AD1E0076EB83 /* DestinationViewController.xib */,
+			);
+			name = BusInformation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,14 +301,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				38509A47187BC4930005F551 /* bus.png in Resources */,
-				38509A49187BC4930005F551 /* find@2x.png in Resources */,
 				38509A4A187BC4930005F551 /* news.png in Resources */,
+				38509A4F187BEFD90005F551 /* message@2x.png in Resources */,
 				38509A21187BC4040005F551 /* Images.xcassets in Resources */,
 				38509A4B187BC4930005F551 /* takeme.png in Resources */,
 				38509A48187BC4930005F551 /* discuss.png in Resources */,
+				38509A53187D219C0005F551 /* back.png in Resources */,
+				38509A4D187BEEBA0005F551 /* find@2x.png in Resources */,
+				38509A51187BF0B90005F551 /* profile@2x.png in Resources */,
 				38509A46187BC4930005F551 /* background.png in Resources */,
 				38509A45187BC4930005F551 /* 4ip5.png in Resources */,
 				38509A10187BC4040005F551 /* InfoPlist.strings in Resources */,
+				650960E11887AD1E0076EB83 /* DestinationViewController.xib in Resources */,
+				650960DC1887ACFC0076EB83 /* TimeTableViewController.xib in Resources */,
 				38509A19187BC4040005F551 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,10 +333,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38509A1F187BC4040005F551 /* SecondViewController.m in Sources */,
 				38509A16187BC4040005F551 /* AppDelegate.m in Sources */,
-				38509A1C187BC4040005F551 /* FirstViewController.m in Sources */,
 				38509A12187BC4040005F551 /* main.m in Sources */,
+				650960DB1887ACFC0076EB83 /* TimeTableViewController.m in Sources */,
+				650960D1188770BA0076EB83 /* BusInformationViewController.m in Sources */,
+				650960CD188770030076EB83 /* MessageViewController.m in Sources */,
+				650960CA18876F850076EB83 /* HomeViewController.m in Sources */,
+				650960E01887AD1E0076EB83 /* DestinationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,6 +548,7 @@
 				38509A39187BC4050005F551 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		38509A3A187BC4050005F551 /* Build configuration list for PBXNativeTarget "HomeTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +557,7 @@
 				38509A3C187BC4050005F551 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
