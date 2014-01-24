@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "DestinationViewController.h"
+#import "ASIHTTPRequest.h"
 
-@interface BusInformationViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+@interface BusInformationViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, ASIHTTPRequestDelegate>
 
 @property(nonatomic,strong) DestinationViewController *destinationViewController;
+
+- (IBAction)refreshInfo:(id)sender;
 
 @end

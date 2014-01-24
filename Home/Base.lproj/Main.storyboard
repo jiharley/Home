@@ -21,7 +21,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7l1-qd-sfA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="592" y="-686"/>
+            <point key="canvasLocation" x="-146" y="-928"/>
         </scene>
         <!--Home View Controller - 发现-->
         <scene sceneID="Uix-kY-O8T">
@@ -67,7 +67,7 @@
                                 <state key="normal" title="带我走吧" backgroundImage="takeme.png"/>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dds-IR-fZ0">
-                                <rect key="frame" x="0.0" y="63" width="320" height="59"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </scrollView>
                         </subviews>
@@ -78,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9JI-9z-RUD" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1024" y="-29"/>
+            <point key="canvasLocation" x="268" y="-271"/>
         </scene>
         <!--Navigation Controller - 发现-->
         <scene sceneID="gCx-RC-BJu">
@@ -94,7 +94,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ro3-TG-al2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="592" y="-29"/>
+            <point key="canvasLocation" x="-146" y="-271"/>
         </scene>
         <!--View Controller - 我-->
         <scene sceneID="AWx-6d-sgf">
@@ -113,9 +113,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iem-Sb-YyD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="592" y="649"/>
+            <point key="canvasLocation" x="-146" y="407"/>
         </scene>
-        <!--Bus Information View Controller-->
+        <!--Bus Information View Controller - 长途大巴-->
         <scene sceneID="f9U-RF-8e1">
             <objects>
                 <viewController hidesBottomBarWhenPushed="YES" id="Ea2-2H-DSf" customClass="BusInformationViewController" sceneMemberID="viewController">
@@ -124,11 +124,11 @@
                         <viewControllerLayoutGuide type="bottom" id="Iti-55-F7N"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dJL-f4-tvv">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="YHQ-ca-a7G">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -139,11 +139,88 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="cOP-v4-dJe"/>
+                    <navigationItem key="navigationItem" title="长途大巴" id="cOP-v4-dJe">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="YzN-fx-2oI">
+                            <connections>
+                                <action selector="refreshInfo:" destination="Ea2-2H-DSf" id="Xvd-NR-2UZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <segue destination="cBJ-86-xZy" kind="push" identifier="destination" id="Jgd-Zs-O8k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DfK-Ur-JSZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1561" y="371"/>
+            <point key="canvasLocation" x="664" y="-271"/>
+        </scene>
+        <!--Destination View Controller - 到达车站-->
+        <scene sceneID="207-qH-EKP">
+            <objects>
+                <viewController id="cBJ-86-xZy" customClass="DestinationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tv5-S3-2vb"/>
+                        <viewControllerLayoutGuide type="bottom" id="HXP-vr-QUp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rbs-dF-2Dk">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="1Kq-FG-7BK">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="cBJ-86-xZy" id="UHv-sX-s8e"/>
+                                    <outlet property="delegate" destination="cBJ-86-xZy" id="yQN-Wa-qpc"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="到达车站" id="84N-8N-eFE"/>
+                    <connections>
+                        <outlet property="destTableView" destination="1Kq-FG-7BK" id="2js-H4-f4m"/>
+                        <segue destination="ke0-UM-lGG" kind="push" identifier="timeTable" id="hWK-N5-4or"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k2K-o5-zFg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1053" y="-271"/>
+        </scene>
+        <!--Time Table View Controller - 时刻表-->
+        <scene sceneID="nSg-1v-8VF">
+            <objects>
+                <viewController id="ke0-UM-lGG" customClass="TimeTableViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5ph-FR-pon"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gxc-9y-Igk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0vV-fT-eOb">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="5h4-aq-67s">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ke0-UM-lGG" id="Maq-pQ-cFi"/>
+                                    <outlet property="delegate" destination="ke0-UM-lGG" id="Zhp-kp-cIa"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="时刻表" id="yGg-yC-JDn"/>
+                    <connections>
+                        <outlet property="timeTableView" destination="5h4-aq-67s" id="LeU-mA-btY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dlO-Lo-g9g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1427" y="-271"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Uga-pj-HEp">
@@ -163,7 +240,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jni-fI-Efz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="47" y="-1"/>
+            <point key="canvasLocation" x="-691" y="-243"/>
         </scene>
     </scenes>
     <resources>

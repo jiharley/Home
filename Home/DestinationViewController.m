@@ -14,7 +14,7 @@
 
 @implementation DestinationViewController
 
-@synthesize timeTableViewController;
+//@synthesize timeTableViewController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -79,13 +79,14 @@
  5、点击单元格时的处理
  */
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self performSegueWithIdentifier:@"timeTable" sender:self];
     //初始化appViewController
-    timeTableViewController = [[TimeTableViewController alloc]initWithNibName:@"TimeTableViewController" bundle:nil];
+//    timeTableViewController = [[TimeTableViewController alloc]initWithNibName:@"TimeTableViewController" bundle:nil];
     //传递参数
     //    destinationViewController.appName = appName;
     //    destinationViewController.appIconName = imageName;
     //跳转
-    [self.navigationController pushViewController:timeTableViewController animated:YES];
+//    [self.navigationController pushViewController:timeTableViewController animated:YES];
 }
 
 

@@ -11,6 +11,7 @@
 
 @interface DestinationViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 
-@property(nonatomic,strong) TimeTableViewController *timeTableViewController;
+//@property(nonatomic,strong) TimeTableViewController *timeTableViewController;
+@property (weak, nonatomic) IBOutlet UITableView *destTableView;
 
 @end

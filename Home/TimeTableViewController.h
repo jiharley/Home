@@ -10,4 +10,5 @@
 
 @interface TimeTableViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 
+@property (weak, nonatomic) IBOutlet UITableView *timeTableView;
 @end

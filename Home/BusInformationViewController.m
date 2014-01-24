@@ -7,6 +7,7 @@
 //
 
 #import "BusInformationViewController.h"
+#import "Constant.h"
 
 @interface BusInformationViewController ()
 
@@ -30,10 +31,26 @@
 	// Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning
+- (IBAction)refreshInfo:(id)sender {
+    NSString *urlString = [NSString stringWithFormat:@"%@/busInfo/station/1", serverURL];
+//    NSString *urlString = @"http://www.baidu.com/";
+    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:[NSURL URLWithString:urlString]];
+    [request setDelegate:self];
+//    request.defaultResponseEncoding = NSASCIIStringEncoding;
+    [request setRequestMethod:@"POST"];
+    [request setShouldAttemptPersistentConnection:NO];
+    [request startAsynchronous];
+}
+
+- (void) requestFinished:(ASIHTTPRequest *)request
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    NSString *responseString = [request responseString];
+    NSLog(@"%@", responseString);
+}
+
+- (void) requestFailed:(ASIHTTPRequest *)request
+{
+    NSLog(@"%@", request.responseString);
 }
 
 #pragma mark - UITableView methods
@@ -93,12 +110,24 @@
  */
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     //初始化appViewController
-    destinationViewController = [[DestinationViewController alloc]initWithNibName:@"DestinationViewController" bundle:nil];
+//    destinationViewController = [[DestinationViewController alloc]initWithNibName:@"DestinationViewController" bundle:nil];
     //传递参数
 //    destinationViewController.appName = appName;
 //    destinationViewController.appIconName = imageName;
     //跳转
-    [self.navigationController pushViewController:destinationViewController animated:YES];
+    [self performSegueWithIdentifier:@"destination" sender:self];
+//    [self.navigationController pushViewController:destinationViewController animated:YES];
 }
+
+- (IBAction)backToHome:(id)sender {
+    
+}
+    
+    
+- (void)didReceiveMemoryWarning
+    {
+        [super didReceiveMemoryWarning];
+        // Dispose of any resources that can be recreated.
+    }
 
 @end
