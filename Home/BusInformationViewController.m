@@ -10,6 +10,9 @@
 #import "Constant.h"
 
 @interface BusInformationViewController ()
+{
+    NSInteger stationCount;
+}
 
 @end
 
@@ -29,6 +32,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    stationCount = 10;
 }
 
 - (IBAction)refreshInfo:(id)sender {
@@ -53,6 +57,7 @@
     NSDictionary *aaa = [responseDic objectAtIndex:1];
     NSLog(@"%@", [aaa objectForKey:@"name"]);
     //NSString *text = [NSString stringWithFormat:@"%@",[responseDic objectForKey:@"id"]];
+    stationCount = [responseDic count];
 }
 
 - (void) requestFailed:(ASIHTTPRequest *)request
@@ -71,9 +76,9 @@
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     NSString *string;
     if (section==0) {
-        string = @"usually";
+        string = @"常用车站";
     } else {
-        string = @"all stations";
+        string = @"所有车站";
     }
     return string;
 }
@@ -85,7 +90,7 @@
     if (section==0) {
          return 1;
     } else {
-         return 20;
+         return stationCount;
     }
 }
 
