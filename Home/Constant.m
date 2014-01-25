@@ -8,7 +8,7 @@
 
 #import "Constant.h"
 
-NSString *const serverURL = @"http://192.168.1.123/home/index.php";
+NSString *const serverURL = @"http://192.168.1.102/home/index.php";
 
 @implementation Constant
 

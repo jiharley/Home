@@ -32,7 +32,7 @@
 }
 
 - (IBAction)refreshInfo:(id)sender {
-    NSString *urlString = [NSString stringWithFormat:@"%@/busInfo/station/1", serverURL];
+    NSString *urlString = [NSString stringWithFormat:@"%@/busInfo/station", serverURL];
 //    NSString *urlString = @"http://www.baidu.com/";
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:[NSURL URLWithString:urlString]];
     [request setDelegate:self];
@@ -45,7 +45,14 @@
 - (void) requestFinished:(ASIHTTPRequest *)request
 {
     NSString *responseString = [request responseString];
+    NSData *responseData = [request responseData];
     NSLog(@"%@", responseString);
+    NSLog(@"%@", responseData);
+    NSError *error;
+    NSArray *responseDic = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingMutableLeaves error:&error];
+    NSDictionary *aaa = [responseDic objectAtIndex:1];
+    NSLog(@"%@", [aaa objectForKey:@"name"]);
+    //NSString *text = [NSString stringWithFormat:@"%@",[responseDic objectForKey:@"id"]];
 }
 
 - (void) requestFailed:(ASIHTTPRequest *)request
